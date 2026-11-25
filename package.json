@@ -34,7 +34,7 @@
   "devDependencies": {
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "scout-app": "github:openscout-app/scout-app#1150281",
+    "scout-app": "github:openscout-app/scout-app#b4d8686",
     "vite": "^7.0.0"
   }
 }
