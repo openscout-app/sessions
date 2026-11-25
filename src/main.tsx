@@ -59,7 +59,7 @@ function App() {
     : null;
 
   return (
-    <ScoutAppFrame product="Sessions" variant="sessions" pages={PAGES} status={badge} setupCallout={callout}>
+    <ScoutAppFrame product="Sessions" variant="sessions" rail="wide" pages={PAGES} status={badge} setupCallout={callout}>
       <SessionsStandaloneSurface />
     </ScoutAppFrame>
   );
