@@ -1,0 +1,40 @@
+{
+  "name": "@openscout/sessions",
+  "version": "0.1.0",
+  "description": "Live and recent Claude Code, Codex, Antigravity, and Kimi sessions on your machine. Prebuilt HTML served on loopback and backed by the Scout CLI.",
+  "license": "Apache-2.0",
+  "homepage": "https://openscout.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openscout-app/sessions.git"
+  },
+  "type": "module",
+  "bin": {
+    "scout-sessions": "bin/scout-sessions.mjs"
+  },
+  "files": [
+    "bin",
+    "server/*.mjs",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node bin/scout-sessions.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@openscout/scout": "^0.5.4"
+  },
+  "devDependencies": {
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "scout-app": "github:openscout-app/scout-app#4789899",
+    "vite": "^7.0.0"
+  }
+}

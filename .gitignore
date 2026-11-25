@@ -1,0 +1,6 @@
+# OpenScout local state
+.openscout/
+
+# Local dependencies
+node_modules/
+.DS_Store

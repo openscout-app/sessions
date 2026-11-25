@@ -1,0 +1,3 @@
+The Sessions surface and Scout frame components bundled into dist/ are compiled from
+openscout-app/scout-app under PolyForm Shield 1.0.0.
+https://github.com/openscout-app/scout-app
