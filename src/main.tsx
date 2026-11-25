@@ -1,17 +1,28 @@
 import { createRoot } from "react-dom/client";
 import { SessionsStandaloneSurface } from "scout-app/sessions";
-import { ScoutThinApp, type ScoutThinStatusBase } from "scout-app/shell";
+import {
+  ScoutThinApp,
+  SessionsGlyph,
+  type ScoutPageTab,
+  type ScoutThinStatusBase,
+} from "scout-app/shell";
 import "scout-app/shell.css";
 
 interface SessionsHostStatus extends ScoutThinStatusBase {
   discovered: number;
 }
 
+const SESSIONS_PAGES: readonly ScoutPageTab[] = [
+  { id: "sessions", label: "Sessions", route: "/", icon: SessionsGlyph },
+];
+
 createRoot(document.getElementById("root")!).render(
   <ScoutThinApp<SessionsHostStatus>
     product="Sessions"
     variant="sessions"
     rail="wide"
+    pages={SESSIONS_PAGES}
+    chrome="sidebar"
     badge={(status) =>
       !status
         ? { label: "Scanning sessions", tone: "loading" }
